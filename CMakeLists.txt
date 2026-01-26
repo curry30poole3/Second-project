@@ -4,6 +4,12 @@ project(mciMusicPlayer)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(mciMusicPlayer main.cpp)
+add_executable(mciMusicPlayer main.cpp
+        button.cpp
+        button.h
+        txt.cpp
+        txt.h
+        def.h
+        drawAlpha.h)
 
 target_link_libraries(mciMusicPlayer libeasyx.a)
